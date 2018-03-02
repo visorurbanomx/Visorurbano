@@ -1,0 +1,25 @@
+@import "variables.scss";
+@import "forms.scss";
+@import "solicitud_licencias_giro_tipo_a.scss";
+
+.admin-gdl-logo{
+  width: 150px;
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+}
+*:focus {
+  outline: none;
+}
+
+.nerror{
+  label.error{
+    display: none !important;
+  }
+}
+#agreeAvisoPrivacidad-error{
+  float: right;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 0.8em;
+}

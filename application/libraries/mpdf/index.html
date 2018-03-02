@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formato</title>
+  <link href="assets/bootstrap.min.css" rel="stylesheet">
+      <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Exo);
+        
+        body {
+            background-color: #E6E6E8;
+            font-family: 'Exo', sans-serif;
+        } 
+        .container{
+            background-color: #E6E6E8;
+        }
+        .breadcrumb{
+            margin-top: 20px;
+            background-color: #AFAFB4;
+        }
+        .titulo{
+           color: #00B3E3;
+        }
+        .panel-primary > .panel-heading {
+            background-color: #5B6871;
+            border-color: #5B6871;
+            color: #fff;
+        }
+        .panel {
+            border-color: #5B6871;
+        }
+    </style>
+
+</head>
+<body class="corporate" ng-app="MyApp" ng-controller="AppCtrl">
+ <div class="container">
+         <nav class="navbar navbar-info">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="http://ayuntamiento.guadalajara.gob.mx/">
+                <img alt="Brand" src="logo.png" width="80">
+              </a>
+              <h1 class="navbar-text titulo"><strong>SOLICITUD DE SERVICIO</strong></h1>
+            </div>
+          </div>
+        </nav>
+         <form class="form-horizontal" action="formato.php" method="post">
+            <div class="panel-group">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">Datos Actuales del Solicitante</div>
+                  <div class="panel-body">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Nombre:</label>
+                            <div class="col-sm-9">
+                              <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required maxlength="200">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Puesto o Nombramiento:</label>
+                            <div class="col-sm-9">
+                              <input type="text" name="puesto" class="form-control" id="puesto" placeholder="Ingresa tu puesto" required maxlength="150">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Coordinación:</label>
+                            <div class="col-sm-9">
+                               <select class="form-control" name="coordinacion" id="coordinacion" placeholder="Selecciona la coordinación" required>
+                                <option></option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Dirección:</label>
+                            <div class="col-sm-9">
+                               <select class="form-control" name="direccion" id="direccion" placeholder="Selecciona la dirección" required>
+                                <option value="Pertenece a la coordinación">Ninguno, Pertenesco únicamente a la coordinación</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Teléfono:</label>
+                            <div class="col-sm-9">
+                              <input type="text" name="telefono" class="form-control" id="telefono" placeholder="Ingresa el teléfono" required maxlength="10">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Extensión:</label>
+                            <div class="col-sm-9">
+                              <input type="text" name="extencion" class="form-control" id="extencion" placeholder="Ingresa tu extensión" required maxlength="4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Persona que Autoriza:</label>
+                            <div class="col-sm-9">
+                              <input type="text" name="autoriza" class="form-control" id="autoriza" placeholder="Nombre completo de persona que autoriza" required maxlength="200">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Puesto:</label>
+                            <div class="col-sm-9">
+                              <input type="text" name="puesto_autoriza" class="form-control" id="puesto_autoriza" placeholder="Puesto o nombramiento de persona que autoriza" required maxlength="150">
+                            </div>
+                        </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-primary">
+                  <div class="panel-heading">Especificaciones de de Solicitud</div>
+                  <div class="panel-body">
+                      <div class="form-group">
+                            <label class="control-label col-sm-2">Tipo de Solicitud:</label>
+                            <div class="col-sm-9">
+                              <label class="radio-inline"><input type="radio" name="tipo" required>Nuevo Empleado</label>
+                              <label class="radio-inline"><input type="radio" name="tipo" required>Modificar Empleado</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Servicios Requeridos:</label>
+                            <div class="col-sm-9">
+                              <label class="checkbox-inline"><input type="checkbox" value="1">Usuario de Dominio de Red</label>
+                              <label class="checkbox-inline"><input type="checkbox" value="2">Correo Electrónico Oficial</label>
+                              <label class="checkbox-inline"><input type="checkbox" value="3">Acceso a Conexión VPN</label>
+                            </div>
+                            <div class="col-sm-9 col-sm-offset-2">
+                              <label class="radio-inline"><input type="radio" name="internet" value="4">Acceso a Internet Esencial</label>
+                              <label class="radio-inline"><input type="radio" name="internet" value="5">Acceso a Internet Básico</label>
+                              <label class="radio-inline"><input type="radio" name="internet" value="6">Acceso a Internet Redes Sociales</label>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-primary">
+                  <div class="panel-heading">Notificarme cuando esté listo a:</div>
+                  <div class="panel-body">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Correo Personal:</label>
+                            <div class="col-sm-9">
+                              <input type="mail" name="correo" class="form-control" id="correo" placeholder="Ingresa tu correo personal" required maxlength="90">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Teléfono y Extensión:</label>
+                            <div class="col-sm-9">
+                              <input type="text" name="contacto" class="form-control" id="contacto" placeholder="Ingresa tu teléfono y extensión" required maxlength="20">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Notas:</label>
+                            <div class="col-sm-9">
+                              <input type="text" name="notas" class="form-control" id="notas" placeholder="..." maxlength="200">
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-10 col-sm-2">
+                      <button type="submit" class="btn btn-primary"><h5>Generar Formato</h5></button>
+                    </div>
+              </div>
+        </form>
+    </div>
+    <script src="assets/angular.min.js"></script>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="formato.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+!function($){"use strict";$("#frmSolicitudGiro").steps({headerTag:"h3",bodyTag:"section",transitionEffect:"slideLeft",autoFocus:!0,labels:{cancel:"Cancelar",current:"Paso actual:",pagination:"Pganinación",finish:"Finalizar",next:"Siguiente",previous:"Anterior",loading:"Cargando ..."}})}(jQuery);

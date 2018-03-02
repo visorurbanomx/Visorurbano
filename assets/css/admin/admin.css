@@ -1,0 +1,373 @@
+button, input {
+  outline: none !important; }
+
+.btn-success {
+  background-color: #8ABF54;
+  border-color: #8ABF54; }
+
+button, input, select, textarea {
+  line-height: inherit; }
+
+input.input-material {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 0px 0;
+  background: transparent !important; }
+
+input.input-material:focus {
+  border-color: #8ABF54; }
+
+.frmAdmin input.input-material:focus {
+  border-color: #1a252f; }
+
+input.input-material ~ label.error, .checkbox-template ~ label.error {
+  color: #F35B53;
+  font-size: 0.75em;
+  position: absolute;
+  top: auto;
+  bottom: -25px;
+  left: 0; }
+
+.st4_aviso_privacidad label.error {
+  bottom: -18px !important;
+  left: 0px !important; }
+
+.mui-textfield {
+  margin-bottom: 30px; }
+
+input.input-material ~ label.active {
+  font-size: 0.8em;
+  top: -10px;
+  color: #8ABF54; }
+
+input.error ~ label {
+  color: #F35B53 !important; }
+
+.txtUP {
+  text-transform: uppercase; }
+
+.frmAdmin input.input-material ~ label.active {
+  font-size: 0.8em;
+  top: -10px;
+  color: #1a252f; }
+
+.form-group {
+  position: relative;
+  margin-bottom: 40px; }
+
+form {
+  margin: 10px 0px 30px; }
+
+/* Messages */
+.messages {
+  width: 100%;
+  margin: 10px 0;
+  display: table; }
+
+.message, .messagePerfil {
+  width: 100%;
+  margin: 0;
+  float: left; }
+  .message .alert, .messagePerfil .alert {
+    margin-bottom: 35px; }
+
+.alert a {
+  color: #721c24;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.aviso-privacidad .checkbox-template + label.error {
+  margin-left: 0px;
+  font-size: 0.85em; }
+.aviso-privacidad input[type=checkbox], .aviso-privacidad input[type=radio] {
+  top: -5px;
+  margin-right: 5px; }
+
+.upercase {
+  text-transform: uppercase; }
+
+/**Mensages**/
+.msessage-cont {
+  width: 100%;
+  background: #ff3111;
+  padding: 20px 0px 10px;
+  color: #ffffff;
+  text-align: center;
+  position: relative; }
+
+.msessage-cont p {
+  padding: 0 50px; }
+
+.msessage-cont .close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  height: 20px;
+  width: 20px;
+  background: url("../img/cerrar.svg");
+  background-size: 20px;
+  cursor: pointer; }
+
+section.projects {
+  position: relative; }
+
+section.projects .msessage-cont {
+  margin-bottom: 50px;
+  margin-top: -50px; }
+
+section.projects .msessage-cont .close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  height: 20px;
+  width: 20px;
+  background: url("../../img/cerrar.svg");
+  background-size: 20px;
+  cursor: pointer; }
+
+.progress-bar-custom {
+  width: 300px; }
+
+.link-to-file {
+  margin-top: 10px; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset; }
+
+/* Loading */
+#overlayLoading {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 9999;
+  background: rgba(118, 192, 88, 0.3);
+  top: 0px;
+  left: 0px; }
+
+#overlayLoadingContent {
+  width: 265px;
+  height: 150px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  margin: 0px auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../../img/vu.gif");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 999999; }
+
+/* errors */
+#overlayError {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0px;
+  left: 0px; }
+
+#overlayErrorContent {
+  width: 40%;
+  padding: 25px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  margin: 0px auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #F44336;
+  z-index: 999999;
+  color: #ffffff; }
+
+#overlayErrorContent .footer, #overlayWarningContent .footer {
+  width: 100%;
+  text-align: right; }
+
+#overlayErrorContent ul, #overlayWarningContent ul {
+  padding: 20px; }
+
+#overlayWarningContent {
+  width: 40%;
+  padding: 25px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  margin: 0px auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #76C058;
+  z-index: 999999;
+  color: #ffffff; }
+
+/*=======Solicitud de licencias de giro tipo A =========*/
+#seccionPromotor, #seccionArrendatario, #seccionAnuencia, #seccionCartaAnuencia, #secRepresentante {
+  display: none; }
+
+#frmSolicitudLicenciaGiro .content {
+  min-height: 100px; }
+
+#frmSolicitudLicenciaGiro .content > .body {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  position: relative; }
+
+input.input-material ~ label.error, .checkbox-template ~ label.error {
+  color: #F35B53;
+  font-size: 0.75em;
+  position: absolute;
+  top: auto;
+  bottom: -30px;
+  left: 0; }
+
+input.input-material ~ label.active {
+  font-size: 0.8em;
+  top: -10px;
+  color: #8ABF54; }
+
+.txtUP {
+  text-transform: uppercase; }
+
+input.input-material[disabled] {
+  cursor: not-allowed; }
+
+.frmAdmin input.input-material ~ label.active {
+  font-size: 0.8em;
+  top: -10px;
+  color: #1a252f; }
+
+.form-group {
+  position: relative;
+  margin-bottom: 40px; }
+
+form {
+  margin: 10px 0px 30px; }
+
+/* Messages */
+.messages {
+  width: 100%;
+  margin: 10px 0;
+  display: table; }
+
+.message, .messagePerfil {
+  width: 100%;
+  margin: 0;
+  float: left; }
+
+.message .alert, .messagePerfil .alert {
+  margin-bottom: 35px; }
+
+.alert a {
+  color: #721c24;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.aviso-privacidad .checkbox-template + label.error {
+  margin-left: 0px;
+  font-size: 0.85em; }
+
+.aviso-privacidad input[type=checkbox], .aviso-privacidad input[type=radio] {
+  top: -5px;
+  margin-right: 5px; }
+
+/*=======Solicitud de licencias de giro tipo A =========*/
+#seccionPromotor, #seccionArrendatario, #seccionAnuencia, #seccionCartaAnuencia {
+  display: none; }
+
+#frmSolicitudLicenciaGiro .content {
+  min-height: 100px; }
+
+#frmSolicitudLicenciaGiro .content > .body {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  position: relative; }
+
+#frmSolicitudLicenciaGiro .wizard > .content > .body label.error {
+  position: absolute;
+  bottom: -32px;
+  left: -22px; }
+
+.fto-st3 label.error {
+  position: absolute;
+  bottom: -52px !important;
+  left: -22px; }
+
+.modalFirmar label.error {
+  bottom: -22px !important;
+  font-size: 0.9em !important; }
+
+/*======= Mensajes =========*/
+#tblMensajes tbody tr td {
+  padding: 20px 10px; }
+
+/******* Data Tables ********/
+div.dataTables_wrapper div.dataTables_filter input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 200px !important;
+  font-size: 15px; }
+
+.dataTableVU {
+  font-size: 15px; }
+
+.dataTableVU td:first-child {
+  padding-left: 10px; }
+
+.dataTableVU td:last-child {
+  padding-right: 10px; }
+
+ul.pagination a {
+  border: none !important; }
+
+.dataTableVU thead th {
+  padding: 10px 0px; }
+
+.page-item.active .page-link {
+  background-color: transparent;
+  color: #2196F3; }
+
+.dataTables_filter input {
+  width: 40% !important; }
+
+/*======= Error Modal =========*/
+.errorModal .modal-header {
+  background-color: #f5f5f5;
+  font-size: 100px;
+  text-align: center;
+  color: #ff3111;
+  padding: 10px 20px;
+  display: block !important; }
+
+.errorModal .modal-body {
+  padding: 20px !important; }
+
+.errorModal .modal-body ul {
+  padding-left: 40px;
+  padding-top: 20px; }
+
+.admin-gdl-logo {
+  width: 150px;
+  position: absolute;
+  bottom: 40px;
+  left: 50px; }
+
+*:focus {
+  outline: none; }
+
+.nerror label.error {
+  display: none !important; }
+
+#agreeAvisoPrivacidad-error {
+  float: right;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 0.8em; }
