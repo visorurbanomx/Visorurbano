@@ -1,0 +1,74 @@
+// Styling for the navbar
+#mainNav {
+  font-family: $fontPrincipal;
+  font-weight: 400;
+  font-size: 17px;
+  border: none;
+  background: white;
+  a:focus {
+    outline: none;
+  }
+  .navbar-brand {
+    font-size: 0.5rem;
+    color: white;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: white;
+    }
+  }
+  .navbar-nav {
+    letter-spacing: 1px;
+    li.nav-item {
+      a.nav-link {
+        color: black;
+        &:hover {
+          color: $green;
+          outline: none;
+        }
+        &:active,
+        &:focus {
+          //color: white;
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    font-size: 14px;
+    padding: 11px;
+    text-transform: uppercase;
+    color: black;
+  }
+}
+@media(min-width:992px) {
+  #mainNav {
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    .navbar-brand {
+      font-size: 2em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .navbar-nav > li.nav-item > a.nav-link.active {
+      color: white;
+      border-radius: 3px;
+      background: $green;
+      &:active,
+      &:focus,
+      &:hover {
+        color: white;
+        background: $green;
+      }
+    }
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .navbar-brand {
+      font-size: 1.5em;
+    }
+  }
+}

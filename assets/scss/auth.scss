@@ -1,0 +1,36 @@
+@import "variables.scss";
+@import "forms.scss";
+body{
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background: #F9f9f9;
+  font-family:$fontPrincipal;
+}
+.auth{
+  width: 600px;
+  margin: 0px auto 70px;
+  background: white;
+  border-radius: 5px;
+  margin-top: 80px;
+  padding: 50px 35px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px 0 2px rgba(0, 0, 0, 0.05);
+  color: #818B91;
+  .logo{
+      width: 100%;
+      text-align: center;
+  }
+  a{
+
+    outline: none;
+  }
+  a.btn{
+    color: white;
+  }
+}
+
+@media(max-width:600px) {
+  .auth{
+    width: 95%;
+  }
+}

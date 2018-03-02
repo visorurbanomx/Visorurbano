@@ -1,0 +1,53 @@
+button, input {
+  outline: none !important; }
+
+.btn-success {
+  background-color: #8ABF54;
+  border-color: #8ABF54; }
+
+button, input, select, textarea {
+  line-height: inherit; }
+
+input.input-material {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0; }
+
+input.input-material:focus {
+  border-color: #8ABF54; }
+
+input.input-material ~ label {
+  color: #aaa;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  cursor: text;
+  transition: all 0.2s;
+  font-weight: 300; }
+
+input.input-material ~ label.error, .checkbox-template ~ label.error {
+  color: #d9534f;
+  font-size: 0.75em;
+  position: absolute;
+  top: auto;
+  bottom: -30px;
+  left: 0; }
+
+input.input-material ~ label.active {
+  font-size: 0.8em;
+  top: -10px;
+  color: #8ABF54; }
+
+.form-group {
+  position: relative;
+  margin-bottom: 40px; }
+
+form {
+  margin: 10px 0px 30px; }
+
+/* Messages */
+.messages {
+  width: 100%;
+  margin: 10px 0;
+  display: table; }
