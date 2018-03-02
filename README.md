@@ -10,5 +10,15 @@ Código externo y/o Librerias
 * normalize -> github.com/necolas/normalize.css
 * mpdf -> https://mpdf.github.io/
 * WsdlToPhp -> https://github.com/WsdlToPhp/PackageGenerator
- 
+
+# infraestructura
+* Php
+* Apache2
+* Mysql
+* Postgresql
+* Postgis
+* Geoserver
+* Cesium
+
+
 
